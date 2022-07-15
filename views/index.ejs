@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>User List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center">
+    <h2>User List</h2>
+  </div>
+  <div class="container">
+    <a class="btn btn-outline-primary" href="/users/create"> <i class="fas fa-user"></i> Create User</a>
+    </p>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>name</th>
+          <th>password</th>
+          <th>address</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach((result)=> { %>
+          <tr>
+            <td>
+              <%= result.name %>
+            </td>
+            <td>
+              <%= result.password %>
+            </td>
+            <td>
+              <%= result.address %>
+            </td>
+            <td>
+              <a href="/users/update/<%= result._id %>">update</a>
+            </td>
+            <td>
+              <a href="/users/delete/<%= result._id %> " onclick="return confirm('Are you sure?')">delete</a>
+            </td>
+          </tr>
+          <% }) %>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
