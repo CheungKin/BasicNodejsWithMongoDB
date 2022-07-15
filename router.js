@@ -6,13 +6,13 @@ const path = require('path');
 //List User
 router.get('/users', (req, res) => {
     user.findAll().then(users => {
-        res.render('index', { 'users': users });
+        res.render('index', {'users': users});
     });
 });
 
 //Create user
 router.get('/users/create', (req, res) => {
-    res.render('create', { 'error': '' });
+    res.render('create', {'error': ''});
 });
 
 router.post('/users/create', async (req, res) => {
@@ -22,7 +22,7 @@ router.post('/users/create', async (req, res) => {
             res.redirect('/users');
         });
     } else {
-        res.render('create', { 'error': 'User is existing!' });
+        res.render('create', {'error': 'User is existing!'});
     }
 
 });
@@ -31,7 +31,7 @@ router.post('/users/create', async (req, res) => {
 router.get('/users/update/:_id', (req, res) => {
     console.log(req.params._id);
     user.findById(req.params._id).then(user => {
-        res.render('update', { 'user': user });
+        res.render('update', {'user': user});
     });
 });
 

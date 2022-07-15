@@ -4,5 +4,15 @@
     "keywords": ["util", "functional", "server", "client", "browser"],
     "author": "kin",
     "contributors": [],
-    "dependencies": {}
+    "dependencies": {        
+        "body-parser": "^1.19.0",
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "ejs": "~2.6.2",
+        "ejs-locals": "^1.0.2",
+        "express": "~4.16.1",
+        "express-session": "^1.17.2",
+        "http-errors": "~1.6.3",
+        "mongodb": "^4.1.1",
+        "mongoose": "^6.0.4"}
 }

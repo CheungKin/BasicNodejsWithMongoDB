@@ -74,7 +74,6 @@ exports.update = async (id, user) => {
     }
 };
 
-
 //Delete user
 exports.delete = async (id) => {
     try {
