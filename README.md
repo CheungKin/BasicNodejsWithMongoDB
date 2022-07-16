@@ -18,7 +18,7 @@ A Node.js with basic CRUD operations demo made by:<br>
 ![Update2](https://i.imgur.com/xaOOIGx.png)
 
 # Delete
-Click the 'Delete' button
+Click the `delete` button
 ![Delete1](https://i.imgur.com/lZkOxOg.png)
 ![Delete2](https://i.imgur.com/oBVgQVt.png)
 Done
