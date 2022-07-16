@@ -23,3 +23,9 @@ Click the `delete` button
 ![Delete2](https://i.imgur.com/oBVgQVt.png)
 Done
 ![Delete3](https://i.imgur.com/KnTPrd2.png)
+
+# Database
+![Database](https://i.imgur.com/TcCND9x.png)
+Database : user
+Collection : user
+
